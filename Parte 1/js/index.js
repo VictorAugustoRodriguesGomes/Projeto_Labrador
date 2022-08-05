@@ -36,7 +36,7 @@ const marca = brandPoint.getElementsByTagName('div');
 var intro = [];
 let it1 = {
     title: 'JBL Boombox 2',
-    description: 'Obtenha o som mais potente, exclusivo e profissional da JBL no alto-falante portátil mais poderoso, o JBL Boombox 2. O JBL Boombox 2 produz graves potentes e profundos, assim como o som JBL profissional para festas. A diversão não precisa parar, equipado com uma incrível duração de bateria de 24 horas*, o JBL Boombox 2 permite que você se divirta o dia todo e a noite toda.',
+    description: 'Obtenha o som mais potente, exclusivo e profissional da JBL no alto-falante portátil mais poderoso, o JBL Boombox 2. O JBL Boombox 2 produz graves potentes e profundos, assim como o som JBL profissional para festas. A diversão não precisa parar, equipado com uma incrível duração de bateria de 24 horas, o JBL Boombox 2 permite que você se divirta o dia todo e a noite toda.',
     img: 'intro/jbl.png'
 };
 
@@ -48,7 +48,7 @@ let it2 = {
 
 let it3 = {
     title: 'Smart Speaker Echo Dot 3ª com Alexa',
-    description: 'Deixe a sua vida mais fácil! Com o Smart Speaker Amazon Echo Dot 3ª Geração Alexa você usa sua voz para criar timers, adicionar itens a listas e criar eventos e lembretes. Ouça notícias e confira a previsão do tempo. Peça resultados de jogos de futebol ou informações de personalidades históricas. Controle vários dispositivos compatíveis com um único comando de voz, como trancar as portas e desligar as luzes à noite. O Echo Dot com Alexa é compatível com diversos dispositivos de casa inteligente, incluindo lâmpadas, plugues inteligentes, câmeras e muito mais. Os dispositivos Alexa e Echo Dot são desenvolvidos com múltiplas camadas de privacidade. ',
+    description: 'Deixe a sua vida mais fácil! Com o Smart Speaker Amazon Echo Dot 3ª Geração Alexa você usa sua voz para criar timers, adicionar itens a listas e criar eventos e lembretes. Ouça notícias e confira a previsão do tempo. Peça resultados de jogos de futebol ou informações de personalidades históricas. Controle vários dispositivos compatíveis com um único comando de voz, como trancar as portas e desligar as luzes à noite. O Echo Dot com Alexa é compatível com diversos dispositivos de casa inteligente, incluindo lâmpadas, plugues inteligentes, câmeras e muito mais. Os dispositivos, Alexa e Echo Dot são desenvolvidos com múltiplas camadas de privacidade. ',
     img: 'intro/alexa.png'
 };
 
@@ -61,7 +61,6 @@ IntroDescription.innerText = intro[0].description;
 IntroIMG.src = "img/" + intro[0].img + " ";
 
 var index = 0;
-
 let tempo = 1;
 setInterval(function run() {
     if (tempo != 100) {

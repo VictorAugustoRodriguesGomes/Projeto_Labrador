@@ -350,7 +350,6 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .fieldMenu2 {
@@ -522,16 +521,6 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 .fieldDetalhes {
     display: flex;
     justify-content: center;
@@ -564,21 +553,9 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     border-bottom-left-radius: 10px;
 }
 
-/*.fieldDetalhes .container .imgBx::before {
-    content: 'Eleven Cases';
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #000000;
-    opacity: 0.1;
-    font-size: 80px;
-    font-weight: 800;
-}*/
-
 .fieldDetalhes .container .imgBx img {
     position: relative;
     width: 100%;
-
 }
 
 .fieldDetalhes .container .details {
@@ -611,22 +588,12 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     font-size: 15px;
 }
 
-/*
-.container .details h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 2.5em;
-    color: #a2a2a2;
-    float: left;
-}*/
-
 .fieldDetalhes .container .details h3 {
     font-size: 14px;
     color: #999999;
     font-weight: 500;
     text-decoration: line-through;
     margin-top: 10px;
-
 }
 
 .fieldDetalhes .container .details h4 {
@@ -709,7 +676,6 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
         max-width: 100%;
         margin-left: 0%;
     }
-
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -718,49 +684,6 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
         max-width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* products = partes do site */
 
 .title {
     z-index: 9;
@@ -911,7 +834,6 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
 
     }
 }
-
 
 .titleproducts {
     background: #ffffff;
@@ -1094,14 +1016,11 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     font-weight: 500;
 }
 
-
-
 @media (max-width:991px) {
     .products .container .card a .content {
         height: 190px;
     }
 }
-
 
 @media (max-width: 991px) {
     .products {
@@ -1109,14 +1028,6 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
         min-width: 100%;
     }
 }
-
-
-
-
-
-
-
-
 
 .formations {
     background-color: #ffffff;
@@ -1220,7 +1131,6 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     background: #f3f3f3;
 }
 
-
 .formations .container li.activate .table p {
     font-size: 15px;
     font-weight: 500;
@@ -1250,6 +1160,7 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     text-decoration: none;
     transition: 0.5s;
     text-transform: uppercase;
+
 }
 
 .formations .container .commentIntro p a:hover {
@@ -1293,35 +1204,47 @@ header.subHeader .fieldMenu .fieldSearch.active5 {
     }
 }
 
-
-
-
-
-
-
-
-
 footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px 100px;
+    padding: 60px 60px 40px 60px;
     background: linear-gradient(#404040, #151415);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+footer .fieldBTN {
+    margin-top: 10px;
+}
+
+footer .fieldBTN .btn {
+    background: #404040;
+    color: #ffffff;
+    padding: 10px 29px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+footer .fieldBTN .btn:hover {
+    letter-spacing: 5px;
 }
 
 footer .container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 100%;
 }
 
-footer .container .sec.aboutus {
-    width: 40%;
+footer .container .aboutus {
+    width: 60%;
     transition: 0.5s;
+    padding-right: 15px;
+
 }
 
 footer .container h2 {
@@ -1344,41 +1267,9 @@ footer p {
     color: #999999;
 }
 
-.sci {
-    margin-top: 20px;
-    display: flex;
-}
-
-.sci li {
-    list-style: none;
-}
-
-.sci li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #404040;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: 0.5s;
-}
-
-.sci li a:hover {
-    background: #2196f3;
-}
-
-.sci li a .fa {
-    color: #ffffff;
-    font-size: 20px;
-}
-
 .quickLinks {
     position: relative;
-    width: 25%;
+    width: 20%;
 }
 
 .quickLinks ul li {
@@ -1422,16 +1313,17 @@ footer p {
         padding: 40px;
     }
 
+    footer .fieldBTN .btn {
+        display: grid;
+        text-align: center;
+        width: 100%;
+    }
+
     footer .container {
         flex-direction: column-reverse;
     }
 
-    footer .container .sec {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-
-    footer .container .sec.aboutus,
+    footer .container .aboutus,
     .quickLinks,
     .contact {
         width: 100%;

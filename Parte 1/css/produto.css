@@ -8,8 +8,6 @@
     font-weight: 400;
 }
 
-/* #5b5b5b #151515 */
-
 header {
     position: fixed;
     top: 0;
@@ -66,7 +64,7 @@ header.subHeader .logo {
 }
 
 header.sticky.subHeader2 .logo,
-header.sticky.subHeader .logo  {
+header.sticky.subHeader .logo {
     color: #000000;
 }
 
@@ -613,7 +611,7 @@ header.subHeader .iconFilter i {
     header .logo {
         font-size: 20px;
     }
-    
+
     .fieldMenu .fieldSearch {
         display: none;
         transition: 0.5s ease-in-out;
@@ -1116,28 +1114,47 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 50px 100px;
+    padding: 60px 60px 40px 60px;
     background: linear-gradient(#404040, #151415);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+footer .fieldBTN {
+    margin-top: 10px;
+}
+
+footer .fieldBTN .btn {
+    background: #404040;
+    color: #ffffff;
+    padding: 10px 29px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+footer .fieldBTN .btn:hover {
+    letter-spacing: 5px;
 }
 
 footer .container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 100%;
 }
 
-footer .container .sec.aboutus {
-    width: 40%;
+footer .container .aboutus {
+    width: 60%;
+    transition: 0.5s;
+    padding-right: 15px;
 }
 
 footer .container h2 {
     position: relative;
     color: #ffffff;
-    font-family: serif;
     margin-bottom: 15px;
 }
 
@@ -1153,43 +1170,11 @@ footer .container h2::before {
 
 footer p {
     color: #999999;
-    font-family: serif;
-}
-
-.sci {
-    margin-top: 20px;
-    display: flex;
-}
-
-.sci li {
-    list-style: none;
-}
-
-.sci li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #404040;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 4px;
-}
-
-.sci li a:hover {
-    background: #2196f3;
-}
-
-.sci li a .fa {
-    color: #ffffff;
-    font-size: 20px;
 }
 
 .quickLinks {
     position: relative;
-    width: 25%;
+    width: 20%;
 }
 
 .quickLinks ul li {
@@ -1198,10 +1183,10 @@ footer p {
 
 .quickLinks ul li a {
     color: #999999;
-    font-family: serif;
     text-decoration: none;
     margin-bottom: 10px;
     display: inline-block;
+    transition: 0.5s;
 }
 
 .quickLinks ul li a:hover {
@@ -1210,12 +1195,12 @@ footer p {
 
 .copyrightText {
     width: 100%;
-    font-family: serif;
     background: #151415;
     padding: 8px 100px;
     text-align: center;
     color: #ffffff;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .copyrightText span {
@@ -1233,16 +1218,17 @@ footer p {
         padding: 40px;
     }
 
+    footer .fieldBTN .btn {
+        display: grid;
+        text-align: center;
+        width: 100%;
+    }
+
     footer .container {
         flex-direction: column-reverse;
     }
 
-    footer .container .sec {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-
-    footer .container .sec.aboutus,
+    footer .container .aboutus,
     .quickLinks,
     .contact {
         width: 100%;
@@ -1250,5 +1236,15 @@ footer p {
 
     .copyrightText {
         padding: 8px 40px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    .copyrightText {
+        padding: 8px 20px;
     }
 }
