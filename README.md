@@ -37,7 +37,10 @@ O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Utilizei também a
 1. [Git](https://git-scm.com),
 2. [Visual Studio](https://code.visualstudio.com/) ou outro editor de código.
 
-# Link da biblioteca de ícones Font Awesome
+# Links de bibliotecas utilizadas
+#### Para poder ter aceso a biblioteca Chart.js clique no link abaixo:
+1. [Chart.js](https://www.chartjs.org/).
+
 #### Para poder ter aceso a biblioteca de ícones Font Awesome clique no link abaixo:
 1. [Font Awesome](https://fontawesome.com/).
 
