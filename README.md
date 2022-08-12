@@ -11,6 +11,7 @@ Com objetivo de demonstrar as minhas habilidades como desenvolvedor, desenvolvi 
  - Consiste no desenvolvimento das páginas administrativas/dashboards do e-comerce.
 
 O projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Utilizei também a biblioteca de ícones Font Awesome para ajudar no desenvolvimento.
+
 </br>
 </br>
 
