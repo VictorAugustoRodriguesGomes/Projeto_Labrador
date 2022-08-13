@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROJETO LABRADOR | Adicionar um Novo Produto </title>
+    <link rel="shortcut icon" href="img/base/PL.png">
+    <link rel="stylesheet" href="css/paginaADD.css">
+    <script src="https://kit.fontawesome.com/59a2aef779.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menuL close">
+        <div class="soon">
+            <h1>Projeto Labrador</h1>
+            <i class="fas fa-times" onclick="MenuSideFunction();"></i>
+        </div>
+        <ul class="menuLinks">
+            <li>
+                <div class="iconLink">
+                    <a href="administradorIndex.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span class="nameLink selected"> Painel </span>
+                    </a>
+                </div>
+
+                <ul class="subMenu blank">
+                    <li><a class="nameLink" href="administradorIndex.html"> Painel </a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink">
+                    <a href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="nameLink selected"> Relatório </span>
+                    </a>
+                </div>
+
+                <ul class="subMenu blank">
+                    <li><a class="nameLink" href="#"> Relatório </a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink selected">
+                    <a href="produtosIndex.html">
+                        <i class="fas fa-box"></i>
+                        <span class="nameLink">produtos</span>
+                    </a>
+                    <i class="fas fa-arrow-down arrow"></i>
+                </div>
+
+                <ul class="subMenu">
+                    <li><a class="nameLink" href="produtosIndex.html">produtos</a></li>
+                    <li><a href="produtosADD.html">adicionar</a></li>
+                    <li><a href="produtosIndex.html">Ver</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink ">
+                    <a href="introIndex.html">
+                        <i class="fab fa-buffer"></i>
+                        <span class="nameLink">Intro</span>
+                    </a>
+                    <i class="fas fa-arrow-down arrow"></i>
+                </div>
+
+                <ul class="subMenu">
+                    <li><a class="nameLink" href="introIndex.html">Intro</a></li>
+                    <li><a href="introADD.html">adicionar</a></li>
+                    <li><a href="introIndex.html">Ver</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink">
+                    <a href="destaquesIndex.html">
+                        <i class="fas fa-star"></i>
+                        <span class="nameLink">destaques</span>
+                    </a>
+                    <i class="fas fa-arrow-down arrow"></i>
+                </div>
+
+                <ul class="subMenu">
+                    <li><a class="nameLink" href="destaquesIndex.html">destaques</a></li>
+                    <li><a href="destaquesADD.html">adicionar</a></li>
+                    <li><a href="destaquesIndex.html">Ver</a></li>
+                </ul>
+            </li>
+
+            <div class="profileUser">
+                <div class="profileImg">
+                    <img src="img/base/user.png">
+                </div>
+
+                <div class="fieldProfile">
+                    <div class="profileName">
+                        <h1>Victor Augusto</h1>
+                    </div>
+                </div>
+                <a href="administradorIndex.html"><i id="fo" class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </ul>
+    </div>
+
+    <section class="main">
+        <div class="titleMain">
+            <i class="fas fa-bars menuBar" onclick="MenuSideFunction();"></i>
+            <h1>Produtos</h1>
+        </div>
+
+        <section class="container">
+            <div class="contents" id="field1">
+                <h1> Adicionar um Novo Produto </h1>
+                <div class="inputField">
+                    <input placeholder="Nome do Produto:" type="text" name="name" id="name" autocomplete="off">
+                    <label for="name">Nome do Produto:</label>
+                    <div class="icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                </div>
+
+                <div class="inputField">
+                    <input placeholder="Descrição do Produto:" type="text" name="description" id="description"
+                        autocomplete="off">
+                    <label for="description">Descrição do Produto:</label>
+                    <div class="icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                </div>
+                <a class="btn" id="btn1"> avançar </a>
+            </div>
+
+            <div class="contents" id="field2">
+                <h1> Adicionar um Novo Produto </h1>
+                <div class="inputField">
+                    <input placeholder="Valor do Desconto:" type="text" name="desconto" id="desconto"
+                        autocomplete="off">
+                    <label for="desconto">Valor do Desconto:</label>
+                    <div class="icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                </div>
+
+                <div class="inputField">
+                    <input placeholder="Valor do Produto:" type="text" name="produto" id="produto" autocomplete="off">
+                    <label for="produto">Valor do Produto:</label>
+                    <div class="icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                </div>
+
+                <div class="inputField">
+                    <input placeholder="Valor da Parcela:" type="text" name="parcela" id="parcela" autocomplete="off">
+                    <label for="parcela">Valor da Parcela:</label>
+                    <div class="icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                </div>
+                <a class="btn" id="btn2"> anterior</a>
+                <a class="btn" id="btn3"> avançar </a>
+            </div>
+
+            <div class="contents" id="field3">
+                <h1> Adicionar um Novo Produto </h1>
+                <div class="InputFilefield">
+                    <div class="content">
+                        <i class="fa fa-cloud-upload"></i>
+                        <div class="selectFile">
+                            <p>Selecione a Imagem do Produto:</p>
+                            <label for="file">Selecione Imagem</label>
+                            <input type="file" name="files[]" id="file">
+                        </div>
+                    </div>
+                </div>
+                <a class="btn" id="btn4"> anterior </a>
+                <a class="btn" href="#"> finalizar </a>
+            </div>
+        </section>
+
+        <div class="copyrightText">
+            <p>COPYRIGHT © 2021-ATUAL. VICTOR AUGUSTO RODRIGUES GOMES. TODOS OS DIREITOS RESERVADOS.</p>
+            <span>DESENVOLVIDO POR :</span><br>
+            <span>VICTOR AUGUSTO RODRIGUES GOMES</span>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/produtosADD.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+.menuL {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #000000;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+.menuL.close {
+    width: 78px;
+}
+
+.menuL .soon {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menuL .soon i {
+    display: none;
+    color: #ffffff;
+    font-size: 35px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.menuL .soon h1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .soon h1 {
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.menuL .menuLinks {
+    height: 100%;
+    padding: 0px 0 150px 0;
+    overflow: auto;
+    text-transform: capitalize;
+}
+
+.menuL.close .menuLinks {
+    overflow: visible;
+    padding: 0px 0 150px 0;
+}
+
+.menuL .menuLinks::-webkit-scrollbar {
+    display: none;
+}
+
+.menuL .menuLinks li {
+    position: relative;
+    list-style: none;
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.menuL.close .menuLinks li {
+    margin-bottom: 0px;
+}
+
+.menuL .menuLinks li:hover {
+    background: #2196f3;
+}
+
+.menuL .menuLinks li .iconLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuL.close .menuLinks li .iconLink {
+    display: block
+}
+
+.menuL .menuLinks li i {
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li.menuS i.arrow {
+    transform: rotate(-180deg);
+}
+
+.menuL.close .menuLinks i.arrow {
+    display: none;
+}
+
+.menuL .menuLinks li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menuL .menuLinks li a .nameLink {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .menuLinks li a .nameLink {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menuL .menuLinks li .subMenu {
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: transparent;
+    display: none;
+}
+
+.menuL.close .menuLinks li .subMenu {
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: #2196f3;
+    display: none;
+}
+
+.menuL .menuLinks li.menuS .subMenu {
+    display: block;
+}
+
+.menuL .menuLinks li .subMenu a {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li .subMenu a:hover {
+    color: #000000;
+}
+
+.menuL.close .menuLinks li .subMenu {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 8px 25px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.menuL.close .menuLinks li:hover .subMenu {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li .subMenu .nameLink {
+    display: none;
+}
+
+.menuL.close .menuLinks li .subMenu .nameLink {
+    font-size: 20px;
+    opacity: 1;
+    display: block;
+}
+
+.menuL .menuLinks li .subMenu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 8px 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menuL .menuLinks li:hover .subMenu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menuL.close .profileUser {
+    justify-content: center;
+}
+
+.menuL .profileUser {
+    position: fixed;
+    bottom: 0;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    background: #2196f3;
+    padding: 12px 0;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .profileUser {
+    background: none;
+}
+
+.menuL.close .profileUser {
+    width: 78px;
+}
+
+.menuL .profileUser .profileImg {
+    display: flex;
+    align-items: center;
+}
+
+.menuL .profileUser .profileImg img {
+    height: 52px;
+    width: 52px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 0 14px 0 0px;
+    background: #2196f3;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .profileUser .profileImg img {
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    margin: 0 14px 0 12px;
+    transition: all 0.5s ease;
+}
+
+.menuL .profileUser .profileName h1,
+.menuL .profileUser .perfilEmail h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menuL.close .profileUser i,
+.menuL.close .profileUser .profileName,
+.menuL.close .profileUser .perfilEmail {
+    display: none;
+}
+
+.menuL .profileUser .perfilEmail {
+    font-size: 12px;
+}
+
+.main {
+    position: relative;
+    background: #ffffff;
+    height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+
+.menuL.close~.main {
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
+.main .titleMain {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+}
+
+.main .titleMain .menuBar,
+.main .titleMain h1 {
+    color: #000000;
+    font-size: 35px;
+    transition: all 0.5s ease;
+}
+
+.main .titleMain .menuBar {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.main .titleMain h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.main .titleMain .menuBar.ativo::before {
+    content: '\f00d';
+}
+
+.menuL .profileUser i {
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.menuL .profileUser i:hover {
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li .iconLink.selected {
+    background: #2196f3;
+    width: 100%;
+}
+
+.menuL .menuLinks li .subMenu.selected2 {
+    background: #2196f3;
+}
+
+@media (max-width:1030px) {
+    .menuL {
+        width: 100%;
+    }
+
+    .menuL .soon {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .menuL .soon i {
+        display: block;
+    }
+
+    .menuL.close .soon {
+        display: flex;
+        margin-left: 0px;
+        padding: 0;
+    }
+
+    .menuL.close .soon i {
+        display: none;
+    }
+
+    .menuL .profileUser {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .main.ativo {
+        display: none;
+    }
+
+    .menuL .menuLinks {
+        padding: 10px 0 150px 0;
+    }
+
+    .menuL.close .menuLinks {
+        padding: 0px 0 150px 0;
+    }
+}
+
+.container {
+    padding: 0 5px;
+}
+
+.container h1 {
+    font-weight: 600;
+    color: #000000;
+    font-size: 25px;
+    margin: 15px 0px 30px 10px;
+    text-align: left;
+}
+
+.container .row {
+    width: 100%;
+    display: flex;
+}
+
+.container .row .col25 {
+    width: 50%;
+    margin: 10px;
+}
+
+.container .title p {
+    color: #000000;
+}
+
+.container .containerCard {
+    flex-wrap: wrap;
+    display: flex;
+    box-shadow: 0 4px 30px -7px #00000066;
+    border-radius: 10px;
+    margin: 0 0 2rem 0;
+    overflow: hidden;
+    position: relative;
+    color: #18151f;
+    background-color: #ffffff;
+    min-height: 250px;
+    width: 100%;
+}
+
+.container .containerCard .contentImg img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container .containerCard .contentImg {
+    display: contents;
+}
+
+.container .containerCard:hover .contentImg img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.container .containerCard .contentBx {
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: 1s ease-in-out;
+}
+
+.container .containerCard .contentBx h1 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    line-height: 1.2;
+    cursor: pointer;
+    color: #000000;
+    text-align: left;
+}
+
+.container .containerCard .contentBx p {
+    color: #111;
+    font-size: 15px;
+}
+
+.container .containerCard .contentBx h2 {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.container .containerCard .contentBx h3 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.container .containerCard .contentBx h4 {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.container .containerCard .contentBx h3 span {
+    color: #2196f3;
+}
+
+.container .containerCard .bar {
+    width: 50px;
+    height: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #2196f3;
+    transition: width 0.2s ease;
+}
+
+.container .containerCard:hover .bar {
+    width: 100px;
+}
+
+.container a {
+    background: #2196f3;
+    color: #ffffff;
+    padding: 12px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.container a:hover {
+    background: #2196f3;
+    letter-spacing: 5px;
+}
+
+.container .containerCard .fieldBTN a:nth-child(3):hover {
+    background: #ff0000;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .container h1 {
+        margin: 10px 0px 20px 0px;
+    }
+
+    .container .row {
+        display: block;
+    }
+
+    .container .row .col25 {
+        width: 100%;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 760px) {
+    .container .containerCard .contentBx {
+        padding: 10px;
+    }
+}
+
+.copyrightText {
+    width: 100%;
+    font-family: serif;
+    background: #000000;
+    padding: 11px 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.copyrightText span {
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+    .copyrightText {
+        padding: 8px 40px;
+    }
+}

@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+.menuL {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background: #000000;
+    z-index: 100;
+    transition: all 0.5s ease;
+}
+
+.menuL.close {
+    width: 78px;
+}
+
+.menuL .soon {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menuL .soon i {
+    display: none;
+    color: #ffffff;
+    font-size: 35px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.menuL .soon h1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .soon h1 {
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.menuL .menuLinks {
+    height: 100%;
+    padding: 0px 0 150px 0;
+    overflow: auto;
+    text-transform: capitalize;
+}
+
+.menuL.close .menuLinks {
+    overflow: visible;
+    padding: 0px 0 150px 0;
+}
+
+.menuL .menuLinks::-webkit-scrollbar {
+    display: none;
+}
+
+.menuL .menuLinks li {
+    position: relative;
+    list-style: none;
+    transition: all 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.menuL.close .menuLinks li {
+    margin-bottom: 0px;
+}
+
+.menuL .menuLinks li:hover {
+    background: #2196f3;
+}
+
+.menuL .menuLinks li .iconLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuL.close .menuLinks li .iconLink {
+    display: block
+}
+
+.menuL .menuLinks li i {
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li.menuS i.arrow {
+    transform: rotate(-180deg);
+}
+
+.menuL.close .menuLinks i.arrow {
+    display: none;
+}
+
+.menuL .menuLinks li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menuL .menuLinks li a .nameLink {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .menuLinks li a .nameLink {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menuL .menuLinks li .subMenu {
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: transparent;
+    display: none;
+}
+
+.menuL.close .menuLinks li .subMenu {
+    padding: 6px 6px 14px 80px;
+    margin-top: -10px;
+    background: #2196f3;
+    display: none;
+}
+
+.menuL .menuLinks li.menuS .subMenu {
+    display: block;
+}
+
+.menuL .menuLinks li .subMenu a {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li .subMenu a:hover {
+    color: #000000;
+}
+
+.menuL.close .menuLinks li .subMenu {
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 8px 25px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.menuL.close .menuLinks li:hover .subMenu {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li .subMenu .nameLink {
+    display: none;
+}
+
+.menuL.close .menuLinks li .subMenu .nameLink {
+    font-size: 20px;
+    opacity: 1;
+    display: block;
+}
+
+.menuL .menuLinks li .subMenu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 8px 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.menuL .menuLinks li:hover .subMenu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menuL.close .profileUser {
+    justify-content: center;
+}
+
+.menuL .profileUser {
+    position: fixed;
+    bottom: 0;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    background: #2196f3;
+    padding: 12px 0;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .profileUser {
+    background: none;
+}
+
+.menuL.close .profileUser {
+    width: 78px;
+}
+
+.menuL .profileUser .profileImg {
+    display: flex;
+    align-items: center;
+}
+
+.menuL .profileUser .profileImg img {
+    height: 52px;
+    width: 52px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 0 14px 0 0px;
+    background: #2196f3;
+    transition: all 0.5s ease;
+}
+
+.menuL.close .profileUser .profileImg img {
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+    margin: 0 14px 0 12px;
+    transition: all 0.5s ease;
+}
+
+.menuL .profileUser .profileName h1,
+.menuL .profileUser .perfilEmail h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menuL.close .profileUser i,
+.menuL.close .profileUser .profileName,
+.menuL.close .profileUser .perfilEmail {
+    display: none;
+}
+
+.menuL .profileUser .perfilEmail {
+    font-size: 12px;
+}
+
+.main {
+    position: relative;
+    background: #ffffff;
+    height: 100vh;
+    left: 260px;
+    width: calc(100% - 260px);
+    transition: all 0.5s ease;
+}
+
+.menuL.close~.main {
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
+.main .titleMain {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+    text-transform: capitalize;
+}
+
+.main .titleMain .menuBar,
+.main .titleMain h1 {
+    color: #000000;
+    font-size: 35px;
+    transition: all 0.5s ease;
+}
+
+.main .titleMain .menuBar {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.main .titleMain h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.main .titleMain .menuBar.ativo::before {
+    content: '\f00d';
+}
+
+.menuL .profileUser i {
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.menuL .profileUser i:hover {
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.menuL .menuLinks li .iconLink.selected {
+    background: #2196f3;
+    width: 100%;
+}
+
+.menuL .menuLinks li .subMenu.selected2 {
+    background: #2196f3;
+}
+
+@media (max-width:1030px) {
+    .menuL {
+        width: 100%;
+    }
+
+    .menuL .soon {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .menuL .soon i {
+        display: block;
+    }
+
+    .menuL.close .soon {
+        display: flex;
+        margin-left: 0px;
+        padding: 0;
+    }
+
+    .menuL.close .soon i {
+        display: none;
+    }
+
+    .menuL .profileUser {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .main.ativo {
+        display: none;
+    }
+
+    .menuL .menuLinks {
+        padding: 10px 0 150px 0;
+    }
+
+    .menuL.close .menuLinks {
+        padding: 0px 0 150px 0;
+    }
+}
+
+.cardsInfo .row {
+    width: 100%;
+    display: flex;
+}
+
+.cardsInfo .row .col50 {
+    width: 25%;
+    margin: 10px;
+}
+
+.cardsInfo .row .col50 .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #FFFFFF;
+    margin: 0px;
+    padding: 15px;
+    transition: transform .45s ease, background .45s ease;
+    box-shadow: 0px 0px 16px -13px #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cardsInfo .row .col50 .container h3 {
+    color: #111111;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 10px;
+    margin: 0 0 5px;
+    border-bottom: 2px solid #2196f3;
+    transition: color .45s ease, border .45s ease;
+}
+
+.cardsInfo .row .col50 .container h4 {
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    transition: color .45s ease;
+}
+
+.cardsInfo .row .col50 .container p {
+    opacity: 0;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 0 10px;
+    transform: translateY(-1em);
+    transition: opacity .45s ease, transform .5s ease;
+    font-size: 16px
+}
+
+.cardsInfo .row .col50 .container .contentLink {
+    display: block;
+    color: #2196f3;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+    transition: color .45s ease;
+}
+
+.cardsInfo .row .col50 .container:hover {
+    background: #2196f3;
+    transform: scale(1.02);
+}
+
+.cardsInfo .row .col50 .container:hover h3 {
+    color: #FFFFFF;
+    border-bottom-color: #ffffff;
+}
+
+.cardsInfo .row .col50 .container:hover h4 {
+    color: #FFFFFF;
+}
+
+.cardsInfo .row .col50 .container:hover p {
+    opacity: 1;
+    transform: none;
+}
+
+.cardsInfo .row .col50 .container:hover .contentLink {
+    color: #FFFFFF;
+}
+
+@media (max-width: 991px) {
+    .cardsInfo {
+        margin-right: 10px;
+    }
+
+    .cardsInfo .row {
+        width: 100%;
+        display: block;
+    }
+
+    .cardsInfo .row .col50 {
+        width: 100%;
+    }
+
+    .cardsInfo .row .col50 .container {
+        width: 92%;
+    }
+}
+
+.tab {
+    padding-bottom: 10px;
+}
+
+.tab .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tab .container h2 {
+    font-size: 20px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.tab .container .responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.tab .container .responsive-table .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.tab .container .responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tab a {
+    background: #2196f3;
+    color: #ffffff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 20px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.tab a:hover {
+    background: #2196f3;
+    padding: 10px 45px;
+}
+
+@media all and (max-width: 767px) {
+    .tab .container h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .tab .container .responsive-table .table-header {
+        display: none;
+    }
+
+    .tab .container .responsive-table .container li {
+        display: block;
+    }
+
+    .tab .container .responsive-table {
+        padding: 0;
+    }
+
+    .tab .container .responsive-table .table-row {
+        width: 100%;
+        background-color: #2196f390;
+    }
+
+    .tab .container .responsive-table .table-row .col {
+        flex-basis: 100%;
+    }
+
+    .tab .container .responsive-table .table-row .col {
+        padding: 10px 0;
+    }
+
+    .tab .container .responsive-table .table-row .col::before {
+        color: #000000;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+    }
+
+    .tab .container .responsive-table li {
+        display: block;
+        padding: 15px 20px;
+    }
+
+    .tab a {
+        margin-top: 0px;
+    }
+}
+
+.copyrightText {
+    width: 100%;
+    font-family: serif;
+    background: #000000;
+    padding: 11px 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.copyrightText span {
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+    .copyrightText {
+        padding: 8px 40px;
+    }
+}

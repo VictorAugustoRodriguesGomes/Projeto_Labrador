@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    background: #ffffff;
+    transition: 0.5s
+}
+
+.intro .fieldTitle {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro.fieldTitle h1 {
+    position: relative;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.intro .fieldTitle a {
+    background: #2196f3;
+    color: #ffffff;
+    padding: 10px 30px;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.intro .fieldTitle a:hover {
+    letter-spacing: 4px;
+}
+
+@media (max-width: 991px) {
+    .intro .fieldTitle {
+        display: block;
+        text-align: center;
+    }
+
+    .intro .fieldTitle h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .intro .fieldTitle a {
+        width: 100%;
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .intro .fieldTitle a:hover {
+        background: #004f88;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .intro .fieldTitle {
+        padding: 3px;
+        margin-top: 10px;
+    }
+}
+
+.intro .row {
+    width: 100%;
+    display: flex;
+}
+
+.intro .row .col70 {
+    width: 70%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.intro .row .col30 {
+    width: 30%;
+    background: #ffffff;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.intro .row .col30 .contenerIntro h1 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.intro .row .col30 .contenerIntro h2 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.intro .row .col30 .contenerIntro p {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.intro .row .col30 .contenerIntro h3 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    display: none;
+}
+
+.intro .row .col30 .contenerIntro {
+    overflow: hidden;
+}
+
+.intro .row .col30 .contenerIntro img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    background: #ffffff;
+    transition: .3s ease transform;
+}
+
+.intro .row .col30 .contenerIntro img:hover {
+    transform: scale(1.1);
+}
+
+.intro .row .col100 {
+    width: 100%;
+    margin: 10px;
+}
+
+@media (max-width: 1000px) {
+    .intro .row {
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+
+    .intro .row .col70 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .intro .row .col30 {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .intro {
+        padding: 5px;
+    }
+
+    .intro .row {
+        padding: 0px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .intro .row .col30 {
+        border-radius: 5px;
+        margin: 0;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+
+    .intro .row .col70 {
+        border-radius: 5px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .intro .row .col30 .contenerIntro h3 {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .intro .row .col30 .contenerIntro h3 {
+        display: none;
+    }
+}
+
+.field1 {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.field1 .row {
+    width: 100%;
+    display: flex;
+}
+
+.field1 .row .col100 {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 991px) {
+    .field1 .row {
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+
+    .field1 .row .col100 {
+        width: 100%;
+        margin: 0;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .field1 {
+        padding: 5px;
+    }
+
+    .field1 .row {
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .field1 .row .col100 {
+        border-radius: 5px;
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+.field2 {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.field2 .row {
+    width: 100%;
+    display: flex;
+}
+
+.field2 .row .col60 {
+    width: 60%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.field2 .row .col60 h1 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.field2 .row .col40 {
+    width: 40%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 991px) {
+    .field2 .row {
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+
+    .field2 .row .col60 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .field2 .row .col40 {
+        width: 100%;
+        padding: 0 220px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .field2 .row .col60 h1 {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .field2 {
+        padding: 5px;
+    }
+
+    .field2 .row {
+        padding: 0px;
+        padding-bottom: 40px;
+    }
+
+    .field2 .row .col60 {
+        width: 100%;
+        padding: 5px;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .field2 .row .col40 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .field2 .row .col40 {
+        padding: 0 180px;
+    }
+}
+
+.field3 {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.field3 .row {
+    width: 100%;
+    display: flex;
+}
+
+.field3 .row .col50 {
+    width: 50%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 991px) {
+    .field3 .row {
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+
+    .field3 .row .col50 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .field3 .row .col50:nth-child(1) {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .field3 {
+        padding: 5px;
+    }
+
+    .field3 .row {
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .field3 .row .col50 {
+        border-radius: 5px;
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+.field4 {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    padding-bottom: 30px;
+}
+
+.field4 .row {
+    width: 100%;
+    display: flex;
+}
+
+.field4 .row .col60 {
+    width: 60%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.field4 .row .col60 h1 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.field4 .row .col40 {
+    width: 40%;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 991px) {
+    .field4 .row {
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+
+    .field4 .row .col60 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .field4 .row .col40 {
+        width: 100%;
+        padding: 0 220px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .field4 .row .col60 h1 {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .field4 {
+        padding: 0;
+    }
+
+    .field4 .row {
+        width: 100%;
+        display: block;
+        padding: 5px;
+    }
+
+    .field4 .row .col60 {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+
+    .field4 .row .col40 {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .field4 .row .col60 h1 {
+        padding-left: 0px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .field4 .row .col40 {
+        padding: 0 180px;
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 60px 40px 60px;
+    background: #000000;
+}
+
+footer .fieldBTN {
+    margin-top: 10px;
+}
+
+footer .fieldBTN .btn {
+    background: #404040;
+    color: #ffffff;
+    padding: 10px 29px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+footer .fieldBTN .btn:hover {
+    letter-spacing: 5px;
+}
+
+footer .container {
+    display: flex;
+    width: 100%;
+}
+
+footer .container .aboutus {
+    width: 100%;
+    transition: 0.5s;
+    padding-right: 15px;
+}
+
+footer .container h2 {
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+footer .container h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #2196f3;
+}
+
+footer p {
+    color: #999999;
+}
+
+.copyrightText {
+    width: 100%;
+    background: #000000;
+    padding: 8px 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.copyrightText span {
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .fieldBTN .btn {
+        display: grid;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column-reverse;
+    }
+
+    footer .container .aboutus,
+    .quickLinks,
+    .contact {
+        width: 100%;
+    }
+
+    .copyrightText {
+        padding: 8px 40px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    .copyrightText {
+        padding: 8px 20px;
+    }
+}

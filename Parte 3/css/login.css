@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content {
+    background: #000000;
+    text-align: left;
+    width: 35%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 7px 25px #404040;
+    padding: 16px;
+}
+
+.container .content h1 {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.container .content h2 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.inputField {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.inputField input {
+    font-size: 18px;
+    padding: 20px 0px;
+    height: 56px;
+    border: none;
+    border-bottom: solid 1px #ffffff40;
+    background: #000000;
+    box-sizing: border-box;
+    transition: all .3s linear;
+    color: #ffffff;
+    font-weight: 600;
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    caret-color: transparent;
+}
+
+.inputField input:focus {
+    border-bottom: solid 2px #2196f3;
+    outline: 0;
+    outline: none;
+    padding-bottom: 5px;
+    box-shadow: 0 2px 6px -8px #2196f345;
+}
+
+.inputField label {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: 0;
+    opacity: 0;
+    transition: all .3s ease;
+    padding-left: 51px;
+}
+
+.inputField input:focus~label {
+    padding-left: 10px;
+}
+
+.inputField .icon {
+    position: absolute;
+    bottom: 18px;
+    left: 15px;
+    display: flex;
+    transition: all .3s linear;
+}
+
+.inputField .icon i {
+    font-size: 24px;
+    color: #ffffff;
+    transition: all .3s linear;
+}
+
+.inputField input:focus~.icon {
+    bottom: 10px;
+}
+
+.inputField input:focus~.icon i {
+    color: #2196f3;
+    bottom: 9px;
+}
+
+input::placeholder {
+    padding: 28px 0px 12px 50px;
+}
+
+input:not(:placeholder-shown) {
+    padding: 28px 0px 12px 50px;
+}
+
+input:not(:placeholder-shown)+label {
+    transform: translateY(-17px);
+    opacity: 0.7;
+}
+
+input:not(:valid):not(:focus)+label+.icon {
+    animation-name: shake-shake;
+    animation-duration: .3s;
+}
+
+@keyframes shake-shake {
+    0% {
+        transform: translateX(-3px);
+    }
+
+    20% {
+        transform: translateX(3px);
+    }
+
+    40% {
+        transform: translateX(-3px);
+    }
+
+    60% {
+        transform: translateX(3px);
+    }
+
+    80% {
+        transform: translateX(-3px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.container .content .informationPassword {
+    text-decoration: none;
+}
+
+.container .content .informationPassword h1 {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: right;
+    margin: 0;
+    transition: all .3s
+}
+
+.container .content .informationPassword:hover h1 {
+    color: #2196f3;
+}
+
+.container .content .btn {
+    width: 100%;
+    background: #2196f3;
+    color: #ffffff;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container .content .btn:hover {
+    background: #2196f3;
+    letter-spacing: 7px;
+}
+
+@media (max-width: 991px) {
+    .container .content {
+        width: 91%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .container .content {
+        width: 91%;
+        box-shadow: none;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+    .container .content {
+        width: 94%;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 15px;
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 60px 40px 60px;
+    background: #000000;
+}
+
+footer .fieldBTN {
+    margin-top: 10px;
+}
+
+footer .fieldBTN .btn {
+    background: #404040;
+    color: #ffffff;
+    padding: 10px 29px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+footer .fieldBTN .btn:hover {
+    letter-spacing: 5px;
+}
+
+footer .content {
+    display: flex;
+    width: 100%;
+}
+
+footer .content .aboutus {
+    width: 60%;
+    transition: 0.5s;
+    padding-right: 15px;
+}
+
+footer .content h2 {
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+footer .content h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #2196f3;
+
+}
+
+footer p {
+    color: #999999;
+}
+
+.quickLinks {
+    position: relative;
+    width: 20%;
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a {
+    color: #999999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.quickLinks ul li a:hover {
+    color: #ffffff;
+}
+
+.copyrightText {
+    width: 100%;
+    background: #000000;
+    padding: 8px 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.copyrightText span {
+    color: #ffffff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .fieldBTN .btn {
+        display: grid;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer .content {
+        flex-direction: column-reverse;
+    }
+
+    footer .content .aboutus,
+    .quickLinks,
+    .contact {
+        width: 100%;
+    }
+
+    .copyrightText {
+        padding: 8px 40px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    footer {
+        padding: 40px 20px;
+    }
+
+    .copyrightText {
+        padding: 8px 20px;
+    }
+}

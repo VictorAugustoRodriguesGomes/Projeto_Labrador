@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROJETO LABRADOR | Administração </title>
+    <link rel="shortcut icon" href="img/base/PL.png">
+    <link rel="stylesheet" href="css/administradorIndex.css">
+    <script src="https://kit.fontawesome.com/59a2aef779.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="menuL close">
+        <div class="soon">
+            <h1>Projeto Labrador</h1>
+            <i class="fas fa-times" onclick="MenuSideFunction();"></i>
+        </div>
+        <ul class="menuLinks">
+            <li>
+                <div class="iconLink selected">
+                    <a href="administradorIndex.html">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span class="nameLink selected"> Painel </span>
+                    </a>
+                </div>
+
+                <ul class="subMenu blank">
+                    <li><a class="nameLink" href="administradorIndex.html"> Painel </a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink">
+                    <a href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="nameLink selected"> Relatório </span>
+                    </a>
+                </div>
+
+                <ul class="subMenu blank">
+                    <li><a class="nameLink" href="#"> Relatório </a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink">
+                    <a href="produtosIndex.html">
+                        <i class="fas fa-box"></i>
+                        <span class="nameLink">produtos</span>
+                    </a>
+                    <i class="fas fa-arrow-down arrow"></i>
+                </div>
+
+                <ul class="subMenu">
+                    <li><a class="nameLink" href="produtosIndex.html">produtos</a></li>
+                    <li><a href="produtosADD.html">adicionar</a></li>
+                    <li><a href="produtosIndex.html">Ver</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink ">
+                    <a href="introIndex.html">
+                        <i class="fab fa-buffer"></i>
+                        <span class="nameLink">Intro</span>
+                    </a>
+                    <i class="fas fa-arrow-down arrow"></i>
+                </div>
+
+                <ul class="subMenu">
+                    <li><a class="nameLink" href="introIndex.html">Intro</a></li>
+                    <li><a href="introADD.html">adicionar</a></li>
+                    <li><a href="introIndex.html">Ver</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="iconLink">
+                    <a href="destaquesIndex.html">
+                        <i class="fas fa-star"></i>
+                        <span class="nameLink">destaques</span>
+                    </a>
+                    <i class="fas fa-arrow-down arrow"></i>
+                </div>
+
+                <ul class="subMenu">
+                    <li><a class="nameLink" href="destaquesIndex.html">destaques</a></li>
+                    <li><a href="destaquesADD.html">adicionar</a></li>
+                    <li><a href="destaquesIndex.html">Ver</a></li>
+                </ul>
+            </li>
+
+            <div class="profileUser">
+                <div class="profileImg">
+                    <img src="img/base/user.png">
+                </div>
+
+                <div class="fieldProfile">
+                    <div class="profileName">
+                        <h1>Victor Augusto</h1>
+                    </div>
+                </div>
+                <a href="administradorIndex.html"><i id="fo" class="fas fa-sign-out-alt"></i></a>
+            </div>
+        </ul>
+    </div>
+
+    <section class="main">
+        <div class="titleMain">
+            <i class="fas fa-bars menuBar" onclick="MenuSideFunction();"></i>
+            <h1>Painel</h1>
+        </div>
+
+        <section class="cardsInfo">
+            <div class="row">
+                <div class="col50">
+                    <a href="#" class="container">
+                        <h3>R$ 1.999,00</h3>
+                        <h4>Valor da Última venda</h4>
+                        <p>O valor refere-se ao último produto vendido.</p>
+
+                        <span class="contentLink">
+                            Detalhes
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col50">
+                    <a href="#" class="container">
+                        <h3>R$ 15.699,90</h3>
+                        <h4>Todas as Vendas de hoje</h4>
+                        <p>O valor refere-se a todos os produtos vendidos hoje.</p>
+
+                        <span class="contentLink">
+                            Detalhes
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col50">
+                    <a href="#" class="container">
+                        <h3>R$ 157.979,90</h3>
+                        <h4>Todas as Vendas do mês</h4>
+                        <p>O valor refere-se a todos os produtos vendidos no mês atual.</p>
+
+                        <span class="contentLink">
+                            Detalhes
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col50">
+                    <a href="#" class="container">
+                        <h3>1840</h3>
+                        <h4>Número de produtos vendidos</h4>
+                        <p>Número refere-se ao total de produto vendido no mês atual.</p>
+
+                        <span class="contentLink">
+                            Detalhes
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab">
+            <div class="container">
+                <h2>Lista de produtos vendidos:
+                </h2>
+                <ul class="responsive-table">
+                    <li class="table-header">
+                        <div class="col col-1">Id</div>
+                        <div class="col col-2">Nome Produto</div>
+                        <div class="col col-3">Valor</div>
+                        <div class="col col-4">Status</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Id:">9387765</div>
+                        <div class="col col-2" data-label="Nome Produto:">Redmi Note 10 Pro 128 GB 6 GB Ram</div>
+                        <div class="col col-3" data-label="Valor:">R$1.999,99</div>
+                        <div class="col col-4" data-label="Status:">Pendente</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Id:">9387765</div>
+                        <div class="col col-2" data-label="Nome Produto:">Redmi Note 10 Pro 128 GB 6 GB Ram</div>
+                        <div class="col col-3" data-label="Valor:">R$1.999,99</div>
+                        <div class="col col-4" data-label="Status:">Pendente</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Id:">9387765</div>
+                        <div class="col col-2" data-label="Nome Produto:">Redmi Note 10 Pro 128 GB 6 GB Ram</div>
+                        <div class="col col-3" data-label="Valor:">R$1.999,99</div>
+                        <div class="col col-4" data-label="Status:">Pendente</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Id:">9387765</div>
+                        <div class="col col-2" data-label="Nome Produto:">Redmi Note 10 Pro 128 GB 6 GB Ram</div>
+                        <div class="col col-3" data-label="Valor:">R$1.999,99</div>
+                        <div class="col col-4" data-label="Status:">Pendente</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Id:">9387765</div>
+                        <div class="col col-2" data-label="Nome Produto:">Redmi Note 10 Pro 128 GB 6 GB Ram</div>
+                        <div class="col col-3" data-label="Valor:">R$1.999,99</div>
+                        <div class="col col-4" data-label="Status:">Pendente</div>
+                    </li>
+                    <li class="table-row">
+                        <div class="col col-1" data-label="Id:">9387765</div>
+                        <div class="col col-2" data-label="Nome Produto:">Redmi Note 10 Pro 128 GB 6 GB Ram</div>
+                        <div class="col col-3" data-label="Valor:">R$1.999,99</div>
+                        <div class="col col-4" data-label="Status:">Pendente</div>
+                    </li>
+                </ul>
+            </div>
+
+            <a id="btn"> Veja Mais </a>
+        </section>
+
+        <div class="copyrightText">
+            <p>COPYRIGHT © 2021-ATUAL. VICTOR AUGUSTO RODRIGUES GOMES. TODOS OS DIREITOS RESERVADOS.</p>
+            <span>DESENVOLVIDO POR:</span><br>
+            <span>VICTOR AUGUSTO RODRIGUES GOMES</span>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="js/administradorMenu.js"> </script>
+
+</body>
+
+</html>
